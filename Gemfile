@@ -6,6 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'acts_as_list'
+gem "jquery-ui-rails"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.2'
 # Use Puma as the app server

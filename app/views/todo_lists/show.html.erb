@@ -1,3 +1,10 @@
+<script>
+    $( function() {
+        $( "#todo-items-list" ).sortable();
+        $( "#todo-items-list" ).disableSelection();
+    } );
+</script>
+
 <p id="notice"><%= notice %></p>
 <div class="well">
 <p>
@@ -11,7 +18,9 @@
 </p>
 
 <div id="todo_items_wrapper">
+  <ul id="todo-items-list">
   <%= render @todo_list.todo_items %>
+  </ul>
   <div id="form">
     <%= render "todo_items/form" %>
   </div>
